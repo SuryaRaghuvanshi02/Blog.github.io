@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+body{
+  color: #222;
+}
+main{
+  padding: 10px;
+  max-width: 500px;
+  margin:0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  display: flex; 
+  /* for having content in the same line for header */
+  justify-content: space-between;
+  /* for adding space between the header logo and login and register */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Now we are calling the a tag which is used in header */
+header a{ 
+  text-decoration: none;
+  /* for removing the underline from the header anchor tags */
+  color: inherit;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* calling the logo part of header */
+header a.logo{
+  font-weight: bold;
+}
+/* calling the navbar part of the header */
+header nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 15px;
 }
